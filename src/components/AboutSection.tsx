@@ -13,7 +13,7 @@ export default function AboutSection() {
               {/* World Map Image */}
               <div className="relative">
                 <Image
-                  src="/images/about.jpg"
+                  src="/images/about.webp"
                   alt="Global Market Presence"
                   width={600}
                   height={350}
@@ -106,7 +106,7 @@ export default function AboutSection() {
                     </div>
                     <div className="hidden sm:block flex-shrink-0 w-32 h-24 relative rounded-lg overflow-hidden">
                       <Image
-                        src="/images/about.jpg"
+                        src="/images/about.webp"
                         alt="Global Trading"
                         fill
                         className="object-cover"

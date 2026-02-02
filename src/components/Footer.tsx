@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Footer() {
   return (
@@ -8,11 +9,14 @@ export default function Footer() {
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           {/* Company Info */}
           <div>
-            <div className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 bg-primary-700 rounded-full flex items-center justify-center text-white font-bold">
-                N
-              </div>
-              <span className="font-bold text-white">NIRYATA</span>
+            <div className="mb-4">
+              <Image 
+                src="/logo.png" 
+                alt="Niryata Trading Logo" 
+                width={180} 
+                height={60}
+                className="h-10 w-auto brightness-0 invert"
+              />
             </div>
             <p className="text-sm text-gray-400">
               Global Trading & Logistics solutions for international markets.

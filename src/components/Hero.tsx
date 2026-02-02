@@ -47,7 +47,7 @@ export default function Hero() {
       {/* Optimized Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/images/heroback.jpg"
+          src="/images/heroback.webp"
           alt="Hero Background"
           fill
           priority
@@ -100,7 +100,7 @@ export default function Hero() {
           {/* Right Side - Image */}
           <div className="hidden lg:block relative h-96">
             <Image
-              src="/images/heroback.jpg"
+              src="/images/heroback.webp"
               alt="Trading Professional"
               fill
               className="object-cover rounded-2xl shadow-2xl"

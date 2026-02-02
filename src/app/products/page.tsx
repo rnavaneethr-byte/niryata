@@ -6,21 +6,21 @@ export default function ProductsPage() {
   const sparePartsProducts = [
     {
       icon: '�',
-      image: '/images/products/aautomobile.jpg',
+      image: '/images/products/aautomobile.webp',
       name: 'Automobile Spare Parts',
       description: 'High-quality automotive components and spare parts for various vehicle models.',
       features: ['OEM Quality', 'Multiple Brands', 'Warranty Backed', 'Global Sourcing']
     },
     {
       icon: '⚙️',
-      image: '/images/products/industriaal.png',
+      image: '/images/products/industriaal.webp',
       name: 'Industrial & Machinery Components',
       description: 'Heavy-duty industrial equipment components for manufacturing and production.',
       features: ['Heavy Duty', 'Long Lasting', 'Custom Sizes', 'Expert Sourcing']
     },
     {
       icon: '✓',
-      image: '/images/products/oem.jpg',
+      image: '/images/products/oem.webp',
       name: 'OEM & Quality-Assured Products',
       description: 'Certified OEM parts meeting international quality and safety standards.',
       features: ['Quality Certified', 'OEM Standards', 'Tested & Verified', 'Fast Delivery']
@@ -30,21 +30,21 @@ export default function ProductsPage() {
   const garmentsProducts = [
     {
       icon: '👕',
-      image: '/images/products/garments.jpg',
+      image: '/images/products/garments.webp',
       name: 'Readymade Garments',
       description: 'Quality readymade garments for men, women, and children across all categories.',
       features: ['Ready Stock', 'Multiple Sizes', 'Quality Fabrics', 'Affordable Pricing']
     },
     {
       icon: '👗',
-      image: '/images/products/fashion.png',
+      image: '/images/products/fashion.webp',
       name: 'Apparel & Fashion Products',
       description: 'Fashion-forward apparel and clothing solutions for retail and wholesale.',
       features: ['Latest Trends', 'Premium Quality', 'Various Styles', 'Seasonal Collections']
     },
     {
       icon: '🧵',
-      image: '/images/products/bulk.jpg',
+      image: '/images/products/bulk.webp',
       name: 'Bulk & Customized Sourcing',
       description: 'Bulk orders and customized sourcing solutions for businesses and retailers.',
       features: ['Bulk Orders', 'Custom Branding', 'Logo Printing', 'Wholesale Rates']
@@ -54,21 +54,21 @@ export default function ProductsPage() {
   const foodProducts = [
     {
       icon: '🫘',
-      image: '/images/products/grain.jpg',
+      image: '/images/products/grain.webp',
       name: 'Pulses & Grains',
       description: 'Premium quality pulses, lentils, and grain varieties meeting food standards.',
       features: ['Multiple Varieties', 'Quality Checked', 'Fresh Stock', 'Bulk Available']
     },
     {
       icon: '📦',
-      image: '/images/products/packed.png',
+      image: '/images/products/packed.webp',
       name: 'Packaged Food Products',
       description: 'Ready-to-eat and packaged food items with quality assurance and certifications.',
       features: ['Quality Packaging', 'Long Shelf Life', 'Health Certified', 'Various Brands']
     },
     {
       icon: '🌾',
-      image: '/images/products/agro.png',
+      image: '/images/products/agro.webp',
       name: 'Agro Commodities',
       description: 'Agricultural commodities including spices, rice, and other farm products.',
       features: ['Export Grade', 'Pure Quality', 'Wholesale Pricing', 'Timely Supply']
@@ -78,21 +78,21 @@ export default function ProductsPage() {
   const otherProducts = [
     {
       icon: '🏭',
-      image: '/images/products/machinery.png',
+      image: '/images/products/machinery.webp',
       name: 'Machinery & Equipment',
       description: 'Industrial machinery, equipment, and tools for manufacturing and production.',
       features: ['Latest Technology', 'Warranty Backed', 'Installation Support', 'Technical Assistance']
     },
     {
       icon: '📦',
-      image: '/images/products/generalgoods.png',
+      image: '/images/products/generalgoods.webp',
       name: 'General Trading Goods',
       description: 'Wide range of trading goods across multiple categories and industries.',
       features: ['Multiple Categories', 'Quality Assured', 'Competitive Rates', 'Reliable Supply']
     },
     {
       icon: '🔍',
-      image: '/images/products/custom.jpg',
+      image: '/images/products/custom.webp',
       name: 'Custom Sourcing on Request',
       description: 'Specialized custom sourcing services for unique business requirements and products.',
       features: ['Custom Orders', 'Dedicated Support', 'Global Network', 'Flexible Solutions']
@@ -105,7 +105,7 @@ export default function ProductsPage() {
       <section 
         className="relative py-32 text-white overflow-hidden"
         style={{
-          backgroundImage: 'url(/images/heroback.jpg)',
+          backgroundImage: 'url(/images/heroback.webp)',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           minHeight: '600px'
@@ -125,7 +125,7 @@ export default function ProductsPage() {
             </p>
             <div className="flex items-center gap-4">
               <a href="/contact" className="inline-block bg-white text-primary-700 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors shadow-lg">
-                INQUIRE NOW
+                ENQUIRE NOW
               </a>
             </div>
           </div>

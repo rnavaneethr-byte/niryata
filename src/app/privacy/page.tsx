@@ -16,7 +16,7 @@ export default function PrivacyPage() {
           <section>
             <h2 className="text-2xl font-bold text-gray-900 mb-4">1. Information We Collect</h2>
             <p className="text-gray-700 leading-relaxed mb-3">
-              We collect information you voluntarily provide through our contact forms, including your name, email address, phone number, and business inquiries. This information is used solely to respond to your requests and provide our trading and logistics services.
+              We collect information you voluntarily provide through our contact forms, including your name, email address, phone number, and business enquiries. This information is used solely to respond to your requests and provide our trading and logistics services.
             </p>
           </section>
 
@@ -26,7 +26,7 @@ export default function PrivacyPage() {
               Your information is used to:
             </p>
             <ul className="list-disc list-inside text-gray-700 space-y-2 ml-2">
-              <li>Process and respond to your inquiries</li>
+              <li>Process and respond to your enquiries</li>
               <li>Provide trading and logistics solutions</li>
               <li>Send updates about our services</li>
               <li>Improve our website and services</li>

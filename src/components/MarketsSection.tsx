@@ -57,7 +57,7 @@ export default function MarketsSection() {
         <div className="text-center mb-16">
           <span className="text-primary-700 font-semibold text-sm uppercase tracking-wider mb-2 block">Our Presence</span>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            High Quality Innovate Design
+            Global Markets We Serve
           </h2>
         </div>
 
@@ -82,7 +82,7 @@ export default function MarketsSection() {
             <div className="flex justify-center">
               <div className="relative w-full max-w-md">
                 <Image
-                  src="/images/01.jpg"
+                  src="/images/01.webp"
                   alt="Professional Trading"
                   width={400}
                   height={500}

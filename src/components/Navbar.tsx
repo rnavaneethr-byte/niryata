@@ -2,6 +2,7 @@
 
 import React, { useState, memo } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { usePathname, useRouter } from 'next/navigation';
 
 const NavBar = memo(function Navbar() {
@@ -27,11 +28,15 @@ const NavBar = memo(function Navbar() {
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2 font-bold text-xl text-primary-700">
-            <div className="w-10 h-10 bg-primary-700 rounded-full flex items-center justify-center text-white font-bold">
-              N
-            </div>
-            <span>NIRYATA</span>
+          <Link href="/" className="flex items-center">
+            <Image 
+              src="/logo.png" 
+              alt="Niryata Trading Logo" 
+              width={180} 
+              height={60}
+              priority
+              className="h-12 w-auto"
+            />
           </Link>
 
           {/* Desktop Menu */}
@@ -66,17 +71,9 @@ const NavBar = memo(function Navbar() {
             <Link
               href="/contact"
               onMouseEnter={() => handleNavClick('/contact')}
-              className={`font-semibold transition-colors ${
-                isActive('/contact') ? 'text-primary-700' : 'text-gray-700 hover:text-primary-600'
-              }`}
-            >
-              Contact
-            </Link>
-            <Link
-              href="/contact"
               className="bg-primary-700 text-white px-6 py-2 rounded-lg font-semibold hover:bg-primary-800 transition-colors"
             >
-              Call Now
+              Contact Us
             </Link>
           </div>
 

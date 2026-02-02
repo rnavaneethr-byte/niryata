@@ -85,7 +85,7 @@ export default function ProductCard({
 
         {/* Button */}
         <button className="w-full py-2.5 px-4 bg-primary-700 text-white font-semibold rounded-lg hover:bg-primary-800 transition-all duration-300 text-sm group-hover:shadow-lg">
-          Inquire Now
+          Enquire Now
         </button>
       </div>
     </div>

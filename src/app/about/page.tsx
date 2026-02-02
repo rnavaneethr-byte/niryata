@@ -73,7 +73,7 @@ const AboutPageClient = memo(function AboutPage() {
         {/* Optimized Background Image */}
         <div className="absolute inset-0 z-0">
           <Image
-            src="/images/about.jpg"
+            src="/images/about.webp"
             alt="About Us Background"
             fill
             priority
