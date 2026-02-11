@@ -50,12 +50,12 @@ const services = [
 
 export default function ServicesSection() {
   return (
-    <section className="py-16 bg-primary-100 relative overflow-hidden">
-      <div className="container mx-auto px-4 relative z-10">
-        <div className="text-center mb-12">
-          <span className="text-primary-700 font-semibold text-sm uppercase tracking-wider mb-2 block">What We Do</span>
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            What You Can Do<br />with Niryata Trading
+    <section className="py-16 md:py-20 bg-primary-100 relative overflow-hidden">
+      <div className="container mx-auto px-4 md:px-6 relative z-10">
+        <div className="text-center mb-12 md:mb-16">
+          <span className="text-primary-700 font-semibold text-xs md:text-sm uppercase tracking-wider mb-2 block">What We Do</span>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            What You Can Do<br className="hidden sm:block" />with Niryata Trading
           </h2>
         </div>
 
@@ -63,19 +63,19 @@ export default function ServicesSection() {
           {services.map((service, index) => (
             <div
               key={index}
-              className="group relative h-80 rounded-2xl overflow-hidden shadow-lg cursor-pointer"
+              className="group relative h-80 md:h-80 rounded-2xl overflow-hidden shadow-lg cursor-pointer"
             >
               {/* Default State - White Card with Icon */}
-              <div className="absolute inset-0 bg-white p-8 flex flex-col justify-between transition-opacity duration-500 group-hover:opacity-0">
+              <div className="absolute inset-0 bg-white p-6 md:p-8 flex flex-col justify-between transition-opacity duration-500 group-hover:opacity-0">
                 <div>
                   <div className="text-primary-700 mb-4">
                     {service.icon}
                   </div>
-                  <h3 className="text-2xl font-bold text-gray-900 mb-3">{service.title}</h3>
-                  <p className="text-gray-600 leading-relaxed">{service.description}</p>
+                  <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-3">{service.title}</h3>
+                  <p className="text-sm md:text-base text-gray-600 leading-relaxed">{service.description}</p>
                 </div>
                 <div>
-                  <Link href="/products" className="text-primary-600 font-semibold inline-flex items-center gap-2">
+                  <Link href="/products" className="text-primary-600 font-semibold inline-flex items-center gap-2 text-sm md:text-base">
                     Read More
                     <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />

@@ -3,28 +3,28 @@ import Link from 'next/link';
 
 export default function CTASection() {
   return (
-    <section className="py-20 bg-gradient-to-br from-primary-700 to-primary-900 text-white relative">
-      <div className="container mx-auto px-4">
+    <section className="py-16 md:py-20 bg-gradient-to-br from-primary-700 to-primary-900 text-white relative">
+      <div className="container mx-auto px-4 md:px-6">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-6">
             Ready to Transform Your Business?
           </h2>
-          <p className="text-xl text-primary-100 mb-12 leading-relaxed">
+          <p className="text-base md:text-xl text-primary-100 mb-8 md:mb-12 leading-relaxed">
             Connect with our team of experts and discover how Niryata Trading can deliver 
             efficient, reliable solutions for your global trading and logistics needs.
           </p>
 
-          <div className="flex justify-center mb-16">
+          <div className="flex justify-center mb-12 md:mb-16">
             <Link
               href="/about"
-              className="border-2 border-white text-white px-10 py-4 rounded-lg font-semibold hover:bg-white hover:text-primary-700 transition-all duration-300 text-center shadow-lg"
+              className="border-2 border-white text-white px-8 md:px-10 py-3 md:py-4 rounded-lg font-semibold hover:bg-white hover:text-primary-700 transition-all duration-300 text-center shadow-lg text-sm md:text-base"
             >
               Learn More
             </Link>
           </div>
 
           {/* Contact Info Cards */}
-          <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+          <div className="grid md:grid-cols-3 gap-4 md:gap-6 max-w-5xl mx-auto">
             {/* Email */}
             <div className="bg-white/10 backdrop-blur-md p-6 rounded-xl border border-white/20 hover:bg-white/15 transition-all duration-300">
               <div className="flex items-center justify-center w-14 h-14 bg-white/20 rounded-full mx-auto mb-4">

@@ -103,28 +103,28 @@ export default function ProductsPage() {
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
       {/* Hero Section */}
       <section 
-        className="relative py-32 text-white overflow-hidden"
+        className="relative py-20 md:py-32 text-white overflow-hidden"
         style={{
           backgroundImage: 'url(/images/heroback.webp)',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
-          minHeight: '600px'
+          minHeight: '500px'
         }}
       >
         {/* Dark Overlay */}
         <div className="absolute inset-0 bg-gradient-to-r from-primary-900/90 via-primary-800/85 to-primary-700/80"></div>
 
-        <div className="container mx-auto px-4 relative z-10">
+        <div className="container mx-auto px-4 md:px-6 relative z-10 pt-12 md:pt-20">
           <div className="max-w-3xl">
-            <span className="text-primary-200 font-semibold text-sm uppercase tracking-widest block mb-4">OUR PRODUCTS</span>
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+            <span className="text-primary-200 font-semibold text-xs md:text-sm uppercase tracking-widest block mb-3 md:mb-4">OUR PRODUCTS</span>
+            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-bold mb-4 md:mb-6 leading-tight">
               Our Product Portfolio
             </h1>
-            <p className="text-primary-100 text-lg md:text-xl leading-relaxed mb-8">
+            <p className="text-primary-100 text-base md:text-lg lg:text-xl leading-relaxed mb-6 md:mb-8">
               Comprehensive sourcing solutions across multiple industries with guaranteed quality, reliability, and competitive pricing. From automotive parts to garments, food, and industrial equipment.
             </p>
-            <div className="flex items-center gap-4">
-              <a href="/contact" className="inline-block bg-white text-primary-700 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors shadow-lg">
+            <div className="flex flex-col sm:flex-row items-center gap-3 md:gap-4">
+              <a href="/contact" className="inline-block bg-white text-primary-700 px-6 md:px-8 py-3 md:py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors shadow-lg text-center text-sm md:text-base">
                 ENQUIRE NOW
               </a>
             </div>

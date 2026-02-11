@@ -67,8 +67,8 @@ const AboutPageClient = memo(function AboutPage() {
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
       {/* Hero Section */}
       <section 
-        className="relative py-32 text-white overflow-hidden"
-        style={{ minHeight: '600px' }}
+        className="relative py-20 md:py-32 text-white overflow-hidden"
+        style={{ minHeight: '500px' }}
       >
         {/* Optimized Background Image */}
         <div className="absolute inset-0 z-0">
@@ -86,17 +86,17 @@ const AboutPageClient = memo(function AboutPage() {
         {/* Dark Overlay */}
         <div className="absolute inset-0 bg-gradient-to-r from-primary-900/90 via-primary-800/85 to-primary-700/80 z-0"></div>
 
-        <div className="container mx-auto px-4 relative z-10">
+        <div className="container mx-auto px-4 md:px-6 relative z-10 pt-12 md:pt-20">
           <div className="max-w-3xl">
-            <span className="text-primary-200 font-semibold text-sm uppercase tracking-widest block mb-4">ABOUT US</span>
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+            <span className="text-primary-200 font-semibold text-xs md:text-sm uppercase tracking-widest block mb-3 md:mb-4">ABOUT US</span>
+            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-bold mb-4 md:mb-6 leading-tight">
               The Best Choice For your Business
             </h1>
-            <p className="text-primary-100 text-lg md:text-xl leading-relaxed mb-8">
+            <p className="text-primary-100 text-sm md:text-lg lg:text-xl leading-relaxed mb-6 md:mb-8">
               Niryata Trading Private Limited is a professionally managed Trading and Logistics company, delivering reliable sourcing, trading, and end-to-end logistics solutions across international markets. Our operations are driven by efficiency, compliance, and a strong commitment to customer satisfaction.
             </p>
-            <div className="flex items-center gap-4">
-              <a href="/contact" className="inline-block bg-white text-primary-700 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors shadow-lg">
+            <div className="flex flex-col sm:flex-row items-center gap-3 md:gap-4">
+              <a href="/contact" className="inline-block bg-white text-primary-700 px-6 md:px-8 py-3 md:py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors shadow-lg text-center text-sm md:text-base">
                 CONTACT US
               </a>
             </div>
@@ -105,19 +105,19 @@ const AboutPageClient = memo(function AboutPage() {
       </section>
 
       {/* Company Overview */}
-      <section className="py-16">
-        <div className="container mx-auto px-4">
+      <section className="py-12 md:py-16">
+        <div className="container mx-auto px-4 md:px-6">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold text-gray-900 mb-6">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4 md:mb-6">
               Niryata Trading Private Limited
             </h2>
-            <div className="prose prose-lg max-w-none text-gray-700">
-              <p className="mb-6">
+            <div className="prose prose-sm md:prose-lg max-w-none text-gray-700 space-y-4 md:space-y-6">
+              <p className="text-sm md:text-base leading-relaxed">
                 Niryata Trading Private Limited is a professionally managed Trading and Logistics company, 
                 delivering reliable sourcing, trading, and end-to-end logistics solutions across international markets. 
                 Our operations are driven by efficiency, compliance, and a strong commitment to customer satisfaction.
               </p>
-              <p className="mb-6">
+              <p className="text-sm md:text-base leading-relaxed">
                 With a growing global footprint, we serve clients across Africa, the Middle East, Europe, 
                 and other emerging markets, ensuring seamless movement of goods from origin to destination.
               </p>
@@ -127,27 +127,27 @@ const AboutPageClient = memo(function AboutPage() {
       </section>
 
       {/* Vision & Mission */}
-      <section className="py-16 bg-primary-50">
-        <div className="container mx-auto px-4">
+      <section className="py-12 md:py-16 bg-primary-50">
+        <div className="container mx-auto px-4 md:px-6">
           <div className="max-w-5xl mx-auto">
-            <div className="grid md:grid-cols-2 gap-8">
+            <div className="grid md:grid-cols-2 gap-6 md:gap-8">
               {/* Vision */}
-              <div id="vision-section" className="bg-white p-8 rounded-2xl shadow-lg border-2 border-primary-200">
-                <div className="w-16 h-16 bg-gradient-to-br from-primary-500 to-primary-600 rounded-full flex items-center justify-center mb-6 shadow-lg">
-                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div id="vision-section" className="bg-white p-6 md:p-8 rounded-2xl shadow-lg border-2 border-primary-200">
+                <div className="w-14 md:w-16 h-14 md:h-16 bg-gradient-to-br from-primary-500 to-primary-600 rounded-full flex items-center justify-center mb-4 md:mb-6 shadow-lg">
+                  <svg className="w-7 md:w-8 h-7 md:h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
                   </svg>
                 </div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">Our Vision</h3>
-                <p className="text-gray-700 min-h-[60px]">
+                <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-3 md:mb-4">Our Vision</h3>
+                <p className="text-sm md:text-base text-gray-700 min-h-[60px] leading-relaxed">
                   {visionText}
                   <span className="animate-pulse">|</span>
                 </p>
               </div>
 
               {/* Mission */}
-              <div id="mission-section" className="bg-white p-8 rounded-2xl shadow-lg border-2 border-primary-200">
+              <div id="mission-section" className="bg-white p-6 md:p-8 rounded-2xl shadow-lg border-2 border-primary-200">
                 <div className="w-16 h-16 bg-gradient-to-br from-primary-500 to-primary-600 rounded-full flex items-center justify-center mb-6 shadow-lg">
                   <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />

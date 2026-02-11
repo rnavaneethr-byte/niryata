@@ -57,17 +57,17 @@ export default function WhyChooseSection() {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-b from-gray-50 to-white">
-      <div className="container mx-auto px-4">
+    <section className="py-16 md:py-20 bg-gradient-to-b from-gray-50 to-white">
+      <div className="container mx-auto px-4 md:px-6">
         {/* Header */}
-        <div className="text-center mb-16">
-          <span className="text-primary-600 font-semibold text-sm uppercase tracking-wider block mb-4">
+        <div className="text-center mb-12 md:mb-16">
+          <span className="text-primary-600 font-semibold text-xs md:text-sm uppercase tracking-wider block mb-4">
             WHY CHOOSE US
           </span>
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4">
             Why Choose Niryata Trading?
           </h2>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+          <p className="text-base md:text-lg text-gray-600 max-w-3xl mx-auto">
             Your trusted partner for global trading and logistics excellence
           </p>
         </div>

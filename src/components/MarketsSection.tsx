@@ -45,33 +45,33 @@ const rightMarkets = [
 
 export default function MarketsSection() {
   return (
-    <section className="py-20 bg-gradient-to-b from-white to-gray-50 relative overflow-hidden">
+    <section className="py-12 md:py-20 bg-gradient-to-b from-white to-gray-50 relative overflow-hidden">
       {/* Large Background Text */}
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-        <h2 className="text-[15rem] font-bold text-gray-100 opacity-30 select-none whitespace-nowrap">
+        <h2 className="text-6xl md:text-[15rem] font-bold text-gray-100 opacity-30 select-none whitespace-nowrap">
           MARKETS
         </h2>
       </div>
 
-      <div className="container mx-auto px-4 relative z-10">
-        <div className="text-center mb-16">
-          <span className="text-primary-700 font-semibold text-sm uppercase tracking-wider mb-2 block">Our Presence</span>
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+      <div className="container mx-auto px-4 md:px-6 relative z-10">
+        <div className="text-center mb-12 md:mb-16">
+          <span className="text-primary-700 font-semibold text-xs md:text-sm uppercase tracking-wider mb-2 block">Our Presence</span>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4">
             Global Markets We Serve
           </h2>
         </div>
 
         <div className="max-w-7xl mx-auto">
-          <div className="grid lg:grid-cols-3 gap-8 items-center">
+          <div className="grid lg:grid-cols-3 gap-6 md:gap-8 items-center">
             {/* Left Side - Markets */}
             <div className="space-y-12">
               {leftMarkets.map((market, index) => (
-                <div key={index} className="flex items-start gap-4 justify-end text-right">
-                  <div className="flex-1">
-                    <h3 className="text-xl font-bold text-gray-900 mb-2">{market.name}</h3>
-                    <p className="text-sm text-gray-600 leading-relaxed">{market.description}</p>
+                <div key={index} className="flex flex-col sm:flex-row lg:flex-col items-start gap-4 justify-end lg:text-right">
+                  <div className="flex-1 order-2 sm:order-1 lg:order-1">
+                    <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-2">{market.name}</h3>
+                    <p className="text-xs md:text-sm text-gray-600 leading-relaxed">{market.description}</p>
                   </div>
-                  <div className="flex-shrink-0 w-16 h-16 bg-primary-50 rounded-lg flex items-center justify-center text-primary-600 border-2 border-primary-200">
+                  <div className="flex-shrink-0 order-1 sm:order-2 lg:order-2 w-14 md:w-16 h-14 md:h-16 bg-primary-50 rounded-lg flex items-center justify-center text-primary-600 border-2 border-primary-200">
                     {market.icon}
                   </div>
                 </div>
@@ -82,7 +82,7 @@ export default function MarketsSection() {
             <div className="flex justify-center">
               <div className="relative w-full max-w-md">
                 <Image
-                  src="/images/01.webp"
+                  src="/images/products/market.webp"
                   alt="Professional Trading"
                   width={400}
                   height={500}
@@ -94,13 +94,13 @@ export default function MarketsSection() {
             {/* Right Side - Markets */}
             <div className="space-y-12">
               {rightMarkets.map((market, index) => (
-                <div key={index} className="flex items-start gap-4">
-                  <div className="flex-shrink-0 w-16 h-16 bg-primary-50 rounded-lg flex items-center justify-center text-primary-600 border-2 border-primary-200">
+                <div key={index} className="flex flex-col sm:flex-row lg:flex-col items-start gap-4">
+                  <div className="flex-shrink-0 w-14 md:w-16 h-14 md:h-16 bg-primary-50 rounded-lg flex items-center justify-center text-primary-600 border-2 border-primary-200">
                     {market.icon}
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-xl font-bold text-gray-900 mb-2">{market.name}</h3>
-                    <p className="text-sm text-gray-600 leading-relaxed">{market.description}</p>
+                    <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-2">{market.name}</h3>
+                    <p className="text-xs md:text-sm text-gray-600 leading-relaxed">{market.description}</p>
                   </div>
                 </div>
               ))}

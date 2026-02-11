@@ -4,9 +4,9 @@ import Link from 'next/link';
 
 export default function AboutSection() {
   return (
-    <section className="py-20 bg-white relative overflow-hidden">
+    <section className="py-12 md:py-20 bg-white relative overflow-hidden">
       <div className="container mx-auto px-4">
-        <div className="grid lg:grid-cols-2 gap-12 items-center max-w-7xl mx-auto">
+        <div className="grid lg:grid-cols-2 gap-8 md:gap-12 items-center max-w-7xl mx-auto">
           {/* Left Side - World Map */}
           <div className="relative flex justify-center lg:justify-start">
             <div className="relative w-full max-w-[600px]">
@@ -22,48 +22,48 @@ export default function AboutSection() {
                 
                 {/* Market Overlays */}
                 {/* Africa Market - 41% */}
-                <div className="absolute top-[65%] left-[28%] flex items-center gap-2">
+                <div className="hidden sm:flex absolute top-[65%] left-[28%] items-center gap-2">
                   <div className="w-3 h-3 bg-primary-500 rounded-full animate-pulse shadow-lg"></div>
-                  <div className="bg-white/95 backdrop-blur-sm px-4 py-2 rounded-lg shadow-lg border border-primary-200">
+                  <div className="bg-white/95 backdrop-blur-sm px-3 md:px-4 py-2 rounded-lg shadow-lg border border-primary-200">
                     <div className="flex items-center gap-2">
-                      <span className="text-3xl font-bold text-primary-500">41%</span>
-                      <span className="text-primary-500 text-xl font-bold">»</span>
+                      <span className="text-2xl md:text-3xl font-bold text-primary-500">41%</span>
+                      <span className="text-primary-500 text-lg md:text-xl font-bold">»</span>
                     </div>
                     <p className="text-xs text-gray-600 font-medium">Africa Market</p>
                   </div>
                 </div>
 
                 {/* Middle East - 35% */}
-                <div className="absolute top-[40%] left-[55%] flex items-center gap-2">
+                <div className="hidden sm:flex absolute top-[40%] left-[55%] items-center gap-2">
                   <div className="w-3 h-3 bg-primary-500 rounded-full animate-pulse shadow-lg"></div>
-                  <div className="bg-white/95 backdrop-blur-sm px-4 py-2 rounded-lg shadow-lg border border-primary-200">
+                  <div className="bg-white/95 backdrop-blur-sm px-3 md:px-4 py-2 rounded-lg shadow-lg border border-primary-200">
                     <div className="flex items-center gap-2">
-                      <span className="text-3xl font-bold text-primary-500">35%</span>
-                      <span className="text-primary-500 text-xl font-bold">»</span>
+                      <span className="text-2xl md:text-3xl font-bold text-primary-500">35%</span>
+                      <span className="text-primary-500 text-lg md:text-xl font-bold">»</span>
                     </div>
                     <p className="text-xs text-gray-600 font-medium">Middle East</p>
                   </div>
                 </div>
 
                 {/* Europe - 17% */}
-                <div className="absolute top-[18%] left-[45%] flex items-center gap-2">
+                <div className="hidden sm:flex absolute top-[18%] left-[45%] items-center gap-2">
                   <div className="w-3 h-3 bg-primary-500 rounded-full animate-pulse shadow-lg"></div>
-                  <div className="bg-white/95 backdrop-blur-sm px-4 py-2 rounded-lg shadow-lg border border-primary-200">
+                  <div className="bg-white/95 backdrop-blur-sm px-3 md:px-4 py-2 rounded-lg shadow-lg border border-primary-200">
                     <div className="flex items-center gap-2">
-                      <span className="text-3xl font-bold text-primary-500">17%</span>
-                      <span className="text-primary-500 text-xl font-bold">»</span>
+                      <span className="text-2xl md:text-3xl font-bold text-primary-500">17%</span>
+                      <span className="text-primary-500 text-lg md:text-xl font-bold">»</span>
                     </div>
                     <p className="text-xs text-gray-600 font-medium">Europe</p>
                   </div>
                 </div>
 
                 {/* Asia Pacific - 7% */}
-                <div className="absolute top-[48%] right-[18%] flex items-center gap-2">
+                <div className="hidden sm:flex absolute top-[48%] right-[18%] items-center gap-2">
                   <div className="w-3 h-3 bg-primary-500 rounded-full animate-pulse shadow-lg"></div>
-                  <div className="bg-white/95 backdrop-blur-sm px-4 py-2 rounded-lg shadow-lg border border-primary-200">
+                  <div className="bg-white/95 backdrop-blur-sm px-3 md:px-4 py-2 rounded-lg shadow-lg border border-primary-200">
                     <div className="flex items-center gap-2">
-                      <span className="text-3xl font-bold text-primary-500">7%</span>
-                      <span className="text-primary-500 text-xl font-bold">»</span>
+                      <span className="text-2xl md:text-3xl font-bold text-primary-500">7%</span>
+                      <span className="text-primary-500 text-lg md:text-xl font-bold">»</span>
                     </div>
                     <p className="text-xs text-gray-600 font-medium">Asia Pacific</p>
                   </div>
@@ -75,11 +75,11 @@ export default function AboutSection() {
           {/* Right Side - Content */}
           <div className="space-y-6">
             <div>
-              <span className="text-primary-700 font-semibold text-sm uppercase tracking-wider">About Us</span>
-              <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mt-2 mb-4 leading-tight">
+              <span className="text-primary-700 font-semibold text-xs md:text-sm uppercase tracking-wider">About Us</span>
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mt-2 mb-4 leading-tight">
                 The Best Choice For<br />your Business.
               </h2>
-              <p className="text-gray-600 leading-relaxed mb-6">
+              <p className="text-sm sm:text-base text-gray-600 leading-relaxed mb-6">
                 Niryata Trading Private Limited is a professionally managed Trading and Logistics company, 
                 delivering reliable sourcing, trading, and end-to-end logistics solutions across international 
                 markets. Our operations are driven by efficiency, compliance, and a strong commitment to 

@@ -30,7 +30,7 @@ export default function ProductCard({
     >
       {/* Image Section */}
       {image && (
-        <div className="relative h-48 overflow-hidden bg-gray-100">
+        <div className="relative h-40 md:h-48 overflow-hidden bg-gray-100">
           <Image
             src={image}
             alt={name}
@@ -48,8 +48,8 @@ export default function ProductCard({
 
       {/* Icon or Fallback */}
       {!image && icon && (
-        <div className="h-40 bg-gradient-to-br from-primary-50 to-gray-50 flex items-center justify-center border-b border-gray-200">
-          <div className={`text-6xl transition-transform duration-300 ${
+        <div className="h-36 md:h-40 bg-gradient-to-br from-primary-50 to-gray-50 flex items-center justify-center border-b border-gray-200">
+          <div className={`text-5xl md:text-6xl transition-transform duration-300 ${
             isHovered ? 'scale-125 -rotate-12' : ''
           }`}>
             {icon}
@@ -58,14 +58,14 @@ export default function ProductCard({
       )}
 
       {/* Content Section */}
-      <div className="p-6 flex flex-col flex-grow">
+      <div className="p-4 md:p-6 flex flex-col flex-grow">
         {/* Title */}
-        <h3 className="text-lg font-bold text-gray-900 mb-2 group-hover:text-primary-700 transition-colors line-clamp-2">
+        <h3 className="text-base md:text-lg font-bold text-gray-900 mb-2 group-hover:text-primary-700 transition-colors line-clamp-2">
           {name}
         </h3>
 
         {/* Description */}
-        <p className="text-gray-600 text-sm mb-4 flex-grow leading-relaxed">
+        <p className="text-gray-600 text-xs md:text-sm mb-4 flex-grow leading-relaxed">
           {description}
         </p>
 

@@ -67,11 +67,11 @@ export default function ContactPage() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-primary-600 via-primary-700 to-primary-800 text-white py-20 pt-32">
-        <div className="container mx-auto px-4">
+      <section className="bg-gradient-to-br from-primary-600 via-primary-700 to-primary-800 text-white py-16 md:py-20 pt-24 md:pt-32">
+        <div className="container mx-auto px-4 md:px-6">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-4">Contact Us</h1>
-            <p className="text-xl text-primary-100">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-3 md:mb-4">Contact Us</h1>
+            <p className="text-base md:text-xl text-primary-100">
               Get in touch with our team for enquiries and support
             </p>
           </div>
@@ -79,14 +79,14 @@ export default function ContactPage() {
       </section>
 
       {/* Contact Form & Info */}
-      <section className="py-16">
-        <div className="container mx-auto px-4">
+      <section className="py-12 md:py-16">
+        <div className="container mx-auto px-4 md:px-6">
           <div className="max-w-6xl mx-auto">
-            <div className="grid lg:grid-cols-2 gap-12">
+            <div className="grid lg:grid-cols-2 gap-8 md:gap-12">
               {/* Contact Form */}
-              <div className="bg-white rounded-2xl shadow-lg p-8 border-2 border-primary-100">
-                <h2 className="text-2xl font-bold text-gray-900 mb-6">Send us a Message</h2>
-                <form onSubmit={handleSubmit} className="space-y-6" noValidate aria-label="Contact form">
+              <div className="bg-white rounded-2xl shadow-lg p-6 md:p-8 border-2 border-primary-100">
+                <h2 className="text-xl md:text-2xl font-bold text-gray-900 mb-6">Send us a Message</h2>
+                <form onSubmit={handleSubmit} className="space-y-5 md:space-y-6" noValidate aria-label="Contact form">
                   <div>
                     <label htmlFor="name" className="block text-sm font-semibold text-gray-700 mb-2">
                       Full Name <span className="text-red-500" aria-label="required">*</span>
@@ -191,8 +191,8 @@ export default function ContactPage() {
               {/* Contact Information */}
               <div className="space-y-8">
                 <div>
-                  <h2 className="text-2xl font-bold text-gray-900 mb-6">Get in Touch</h2>
-                  <p className="text-gray-600 mb-8">
+                  <h2 className="text-xl md:text-2xl font-bold text-gray-900 mb-4 md:mb-6">Get in Touch</h2>
+                  <p className="text-sm md:text-base text-gray-600 mb-6 md:mb-8">
                     We&apos;re here to help! Reach out to us for any enquiries about our trading and logistics services.
                   </p>
                 </div>
