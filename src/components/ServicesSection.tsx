@@ -55,7 +55,8 @@ export default function ServicesSection() {
         <div className="text-center mb-12 md:mb-16">
           <span className="text-primary-700 font-semibold text-xs md:text-sm uppercase tracking-wider mb-2 block">What We Do</span>
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            What You Can Do<br className="hidden sm:block" />with Niryata Trading
+            What You Can Do<span className="sm:hidden"> </span>
+            <br className="hidden sm:block" />with Niryata Trading
           </h2>
         </div>
 
